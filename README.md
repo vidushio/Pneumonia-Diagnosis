@@ -17,14 +17,22 @@ Dataset
 The Chest X-ray Images (Pneumonia) dataset from Kaggle serves as the foundation for training and evaluating the model. This dataset includes labeled X-ray images for training, validation, and testing, enabling the model to learn patterns associated with pneumonia.
 
 Dataset Information
-Dataset Path: Kaggle Chest X-ray Pneumonia Dataset
+Dataset Path: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
+
 Training Set Path: chest_xray_data/train
+
 Validation Set Path: chest_xray_data/val
+
 Test Set Path: chest_xray_data/test
+
 Dataset Size
+
 Training Set Size: 5216 images
+
 Validation Set Size: 16 images
+
 Test Set Size: 624 images
+
 The training script employs this dataset to fine-tune the pre-trained model, optimizing it for pneumonia detection.
 
 
@@ -35,38 +43,47 @@ PyTorch
 
 Import Statement: import torch
 Description: PyTorch is an open-source machine learning library known for its dynamic computational graph, facilitating flexible model development and training.
+
 TorchVision
 
 Import Statement: from torchvision import transforms as T, datasets
 Description: TorchVision, part of PyTorch, provides datasets, model architectures, and image transformations, simplifying computer vision tasks.
+
 NumPy
 
 Import Statement: import numpy as np
 Description: NumPy is a fundamental library for scientific computing, offering support for large arrays and matrices along with mathematical functions.
+
 Matplotlib
 
 Import Statement: import matplotlib.pyplot as plt
 Description: Matplotlib is a versatile 2D plotting library in Python, widely used for creating static, animated, and interactive visualizations.
+
 TQDM
 
 Import Statement: from tqdm.notebook import tqdm
 Description: TQDM is a fast progress bar library for Python and command-line interfaces, providing a visual indication of task progress.
+
 Timm
 
 Import Statement: import timm
 Description: Timm (PyTorch Image Models) offers pre-trained models for image classification and computer vision tasks, streamlining model importation.
+
 TorchSummary
 
 Import Statement: from torchsummary import summary
 Description: TorchSummary is a library providing a concise summary of PyTorch model architectures, including layer information and parameter counts.
+
 os
 
 Import Statement: import os
 Description: The os module provides a cross-platform way to interact with the operating system, offering functions for file and directory operations, path manipulation, and more.
+
 DataLoader
 
 Import Statement: from torch.utils.data import DataLoader
 Description: DataLoader is a PyTorch utility that efficiently loads and iterates over batches of data from a given dataset during model training or evaluation.
+
 make_grid
 
 Import Statement: from torchvision.utils import make_grid
@@ -78,7 +95,8 @@ Description: make_grid is a function within the torchvision library that creates
 Utilized TorchVision library for common image transformations and dataset loading.
 Defined custom transformations, including resizing, random rotation, ToTensor, and normalization.
 Loaded the dataset using ImageFolder class from TorchVision, organizing images into classes based on subdirectories.
-Data Batching:
+
+### Data Batching:
 
 Employed DataLoader class from PyTorch for efficient loading and iteration over batches of data during training and evaluation.
 Applied shuffling to introduce randomness during training.
@@ -105,13 +123,21 @@ Created a function to visualize model predictions and ground truth for better in
 ### Tools and Libraries Used:
 
 Utilized PyTorch for neural network modeling and training.
+
 Incorporated TorchVision for image-related tasks.
+
 Employed NumPy for numerical operations.
+
 Used Matplotlib for data visualization.
+
 Leveraged TQDM for progress bars during training.
+
 Integrated Timm for pre-trained models and architectures.
+
 Utilized TorchSummary for model architecture summaries.
+
 Utilized os for interaction with the operating system.
+
 Implemented DataLoader and make_grid for efficient data handling.
 
 
@@ -119,13 +145,16 @@ Implemented DataLoader and make_grid for efficient data handling.
 The trained model was evaluated on the test set to assess its performance on unseen data. The results on the test set are as follows:
 
 Test Accuracy: 87.98%
+
 Test Loss: 0.2959
+
 These metrics indicate that the model achieved a high accuracy on the test set, demonstrating its effectiveness in classifying pneumonia from chest X-ray images.
 
-Visualizing Model Predictions
+Visualizing Model Predictions:
 An example from the test set (image at index 423) was selected to visualize the model's predictions. The model correctly predicted the class as "PNEUMONIA," and the visualization includes the ground truth label, predicted class probabilities, and the corresponding image.
 
 <img width="587" alt="image" src="https://github.com/vidushio/Diabetes-Prediction/assets/140071981/a4999793-c606-4f00-b364-78755a9f0bab">
+
 
 
 These results showcase the model's ability to make accurate predictions on individual images, contributing to its overall high accuracy on the test set.
