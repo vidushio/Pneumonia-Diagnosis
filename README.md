@@ -1,7 +1,7 @@
 
 # Pneumonia Classification
 
-Introduction
+## Introduction
 
 Pneumonia is a prevalent respiratory infection that affects millions of people globally. Timely and accurate diagnosis is crucial for effective treatment and improved patient outcomes. Chest X-rays are commonly used in the diagnosis of pneumonia, and the advent of deep learning techniques has opened avenues for automating the classification of X-ray images.
 
@@ -73,8 +73,7 @@ Import Statement: from torchvision.utils import make_grid
 Description: make_grid is a function within the torchvision library that creates a grid of images from a batch, simplifying the visualization of multiple images in a single display.
 ## Project workflow
 
-Technical Flow
-Dataset Loading and Transformation:
+### Dataset Loading and Transformation:
 
 Utilized TorchVision library for common image transformations and dataset loading.
 Defined custom transformations, including resizing, random rotation, ToTensor, and normalization.
@@ -83,22 +82,27 @@ Data Batching:
 
 Employed DataLoader class from PyTorch for efficient loading and iteration over batches of data during training and evaluation.
 Applied shuffling to introduce randomness during training.
-Model Fine-tuning:
+
+### Model Fine-tuning:
 
 Imported a pre-trained model using timm library for transfer learning.
 Froze certain layers by setting requires_grad to False, modifying the classifier to adapt it to the target task.
-Training Loop:
+
+### Training Loop:
 
 Implemented a custom trainer class with methods for training and validation batch loops.
 Trained the model for multiple epochs, monitoring and saving the model with the minimum validation loss.
-Evaluation and Prediction:
+
+### Evaluation and Prediction:
 
 Loaded the trained model and performed evaluation on the test set.
 Implemented a function to visualize model predictions on individual test images.
-Model Interpretability:
+
+### Model Interpretability:
 
 Created a function to visualize model predictions and ground truth for better interpretability.
-Tools and Libraries Used:
+
+### Tools and Libraries Used:
 
 Utilized PyTorch for neural network modeling and training.
 Incorporated TorchVision for image-related tasks.
