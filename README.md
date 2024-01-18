@@ -8,6 +8,7 @@ Pneumonia is a prevalent respiratory infection that affects millions of people g
 This project focuses on the development of a pneumonia detection model using deep learning. Leveraging Convolutional Neural Networks (CNNs), the model is trained to analyze chest X-ray images and classify them as either normal or indicative of pneumonia. The use of transfer learning, specifically a pre-trained model, enhances the model's ability to extract relevant features from the images.
 
 Objectives
+
 Develop a deep learning model for pneumonia detection using chest X-ray images.
 Utilize transfer learning to leverage a pre-trained CNN model.
 Train the model on a labeled dataset comprising normal and pneumonia X-ray images.
@@ -15,9 +16,11 @@ Evaluate the model's performance on separate validation and test sets.
 Provide an inference script for making predictions on new X-ray images.
 
 Dataset
+
 The Chest X-ray Images (Pneumonia) dataset from Kaggle serves as the foundation for training and evaluating the model. This dataset includes labeled X-ray images for training, validation, and testing, enabling the model to learn patterns associated with pneumonia.
 
 Dataset Information
+
 Dataset Path: https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia
 
 Training Set Path: chest_xray_data/train
