@@ -13,6 +13,7 @@ Utilize transfer learning to leverage a pre-trained CNN model.
 Train the model on a labeled dataset comprising normal and pneumonia X-ray images.
 Evaluate the model's performance on separate validation and test sets.
 Provide an inference script for making predictions on new X-ray images.
+
 Dataset
 The Chest X-ray Images (Pneumonia) dataset from Kaggle serves as the foundation for training and evaluating the model. This dataset includes labeled X-ray images for training, validation, and testing, enabling the model to learn patterns associated with pneumonia.
 
